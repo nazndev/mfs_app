@@ -1,0 +1,16 @@
+name: mfs_app
+description: A new Flutter project.
+version: 1.0.0+1
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  digital_banking_sdk:
+    path: ../digital_banking_sdk  # Path to the SDK relative to the mfs_app directory
+  font_awesome_flutter: ^10.1.0  # Add this line for icon support
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
