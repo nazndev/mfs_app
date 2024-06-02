@@ -44,9 +44,11 @@ packages:
   digital_banking_sdk:
     dependency: "direct main"
     description:
-      path: "../digital_banking_sdk"
-      relative: true
-    source: path
+      path: "."
+      ref: master
+      resolved-ref: "77498ad66656ad117eee0229b80dbba497629980"
+      url: "https://github.com/nazndev/digital_banking_sdk.git"
+    source: git
     version: "0.0.1"
   fake_async:
     dependency: transitive
