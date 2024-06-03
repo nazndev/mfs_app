@@ -1,6 +1,6 @@
 definitions:
-  instance_mac_pro: &instance_mac_pro
-    instance_type: mac_pro
+  instance_mac_mini: &instance_mac_mini
+    instance_type: mac_mini
     max_build_duration: 120
   env_versions: &env_versions
     flutter: stable
@@ -58,7 +58,7 @@ definitions:
 workflows:
   ios-release:
     name: iOS release
-    <<: *instance_mac_pro
+    <<: *instance_mac_mini
     environment:
       <<: *automatic_ios_signing
       <<: *env_versions
