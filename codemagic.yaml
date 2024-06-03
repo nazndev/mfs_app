@@ -8,15 +8,6 @@ definitions:
     cocoapods: default
   environment:
     automatic_ios_signing: &automatic_ios_signing
-      groups:
-        # Update the environment variables in the Codemagic UI below as required
-        # APPLE_ID
-        # APP_SPECIFIC_PASSWORD
-        # APP_STORE_CONNECT_ISSUER_ID
-        # APP_STORE_CONNECT_KEY_IDENTIFIER
-        # APP_STORE_CONNECT_PRIVATE_KEY
-        # APP_STORE_APP_ID
-        # CERTIFICATE_PRIVATE_KEY
       vars:
         BUNDLE_ID: "com.nazim.mfsdbsdk"
         XCODE_WORKSPACE: "Runner.xcworkspace"
