@@ -7,7 +7,7 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('MFS Dashboard'),
+        title: Text('Nagad MFS Dashboard'),
       ),
       body: GridView.count(
         crossAxisCount: 2,

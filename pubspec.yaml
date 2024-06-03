@@ -8,10 +8,12 @@ dependencies:
   flutter:
     sdk: flutter
   digital_banking_sdk:
+    #path: ../digital_banking_sdk
     git:
       url: https://github.com/nazndev/digital_banking_sdk.git
-      ref: master  # You can specify a branch, tag, or commit hash
+      ref: master
   font_awesome_flutter: ^10.1.0
+
 
 dev_dependencies:
   flutter_test:

@@ -46,7 +46,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "77498ad66656ad117eee0229b80dbba497629980"
+      resolved-ref: "2f03ab27e0430e7bed078f8714b33319766a8b54"
       url: "https://github.com/nazndev/digital_banking_sdk.git"
     source: git
     version: "0.0.1"
