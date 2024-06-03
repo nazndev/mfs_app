@@ -1,19 +1,24 @@
 workflows:
   ios-workflow:
-    name: iOS Workflow
+    name: "iOS Workflow"
     environment:
-      flutter: stable
-      xcode: latest
+      flutter: "stable"
+      xcode: "latest"
     scripts:
-      - name: Install dependencies
+      - name: "Install dependencies"
         script: |
           flutter pub get
-      - name: Build iOS app
+      - name: "Build iOS app"
         script: |
           flutter build ios --release --no-codesign
+          cd ios
+          xcodebuild -workspace Runner.xcworkspace -scheme Runner -sdk iphoneos -configuration Release clean build -allowProvisioningUpdates
+          mkdir -p build/ios/ipa
+          xcrun -sdk iphoneos PackageApplication -v build/Release-iphoneos/Runner.app -o $(pwd)/build/ios/ipa/Runner.ipa
     artifacts:
-      - build/ios/ipa/*.ipa
+      - name: "iOS build"
+        path: "build/ios/ipa/*.ipa"
     publishing:
       email:
         recipients:
-          - naznbd@icloud.com
+          - "naznbd@icloud.com"
